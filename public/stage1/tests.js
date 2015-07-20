@@ -205,7 +205,7 @@ describe('ステージ1（意図した DOM 要素を取得できるようにな�
     it('6 番の紫色の要素を querySelector を使って1つ取得できる', function() {
 
       // 'change me!' を書き換えてください。
-      var element = document.querySelector("[data-js-training='blueviolet']");
+      var element = document.querySelector('[data-js-training="blueviolet"]');
 
       expect(element).to.have.deep.property(secret('qngnfrg.wfGenvavat'),
                                             secret('oyhrivbyrg'));
@@ -231,7 +231,7 @@ describe('ステージ1（意図した DOM 要素を取得できるようにな�
     it('8 番の橙色の要素を ID セレクタを使わずに1つ取得できる', function() {
 
       // 'change me!' を書き換えてください。
-      var selector = '.js-training:nth-child(2) li:nth-child(2) ';
+      var selector = '.js-training:nth-child(2) li:nth-child(2)';
 
       var element = document.querySelector(selector);
       expect(selector).to.not.have.string('#');
@@ -320,7 +320,7 @@ describe('ステージ1（意図した DOM 要素を取得できるようにな�
     it('12 番の紫色の要素を jQuery を使って1つ取得できる', function() {
 
       // 'change me!' を書き換えてください。
-      var $element = $("[data-js-training='darkorchid']");
+      var $element = $('[data-js-training="darkorchid"]');
 
       expect($element).to.be.instanceof(jQuery);
       expect($element).to.have.length(1);
